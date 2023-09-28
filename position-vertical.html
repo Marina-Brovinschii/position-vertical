@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Position</title>
+    <style>
+        body {
+            background-color:rgb(120, 30, 30);
+        }
+        .parent {
+            display: inline-block;
+            padding: 5px;
+        }
+        .parent .child1 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(56, 100, 127);
+            position: absolute;
+            top: 210px;
+            left: 210px;
+            z-index: -3;
+            box-shadow: -7px -6px 20px 0 black;
+            border-radius: 20px 0 0 0;
+            transform: rotateX(62deg) rotateY(359deg) rotateZ(253deg);
+        }
+        .parent .child1:hover {
+            top: 200px;
+            background-color: rgb(69, 124, 158);
+        }
+        .parent .child2 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(41, 74, 94);
+            position: absolute;
+            top: 170px;
+            left: 210px;
+            z-index: -2;
+            box-shadow: -7px -6px 20px 0 black;
+            border-radius: 20px 0 0 0;
+            transform: rotateX(62deg) rotateY(359deg) rotateZ(253deg);
+            opacity: 0.75;
+        }
+        .parent .child2:hover {
+            top: 160px;
+            background-color: rgb(60, 108, 138);
+        }
+        .parent .child3 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(30, 54, 69);
+            position: absolute;
+            top: 130px;
+            left: 210px;
+            box-shadow: -7px -6px 20px 0 black;
+            border-radius: 20px 0 0 0;
+            transform: rotateX(62deg) rotateY(359deg) rotateZ(253deg);
+            opacity:0.5;
+        }
+        .parent .child3:hover {
+            top: 120px;
+            background-color: rgb(49, 86, 110);
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+    </div>
+</body>
+</html>
